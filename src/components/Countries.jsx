@@ -3,6 +3,7 @@ import Card from "./Card";
 import SearchBox from "./SearchBox";
 import SelectByRegion from "./SelectByRegion";
 import Loading from "./Loading";
+import humanize from "humanize-number";
 
 function Countries() {
   const [loading, setLoading] = useState(true);
@@ -75,7 +76,7 @@ function Countries() {
               key={index}
               flag={c.flags.png}
               name={c.name}
-              population={c.population}
+              population={humanize(c.population)}
               region={c.region}
               capital={c.capital}
             />

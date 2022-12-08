@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLoaderData } from "react-router-dom";
+import humanize from "humanize-number";
 
 function Country() {
   const data = useLoaderData();
@@ -78,7 +79,7 @@ function Country() {
                   Population:{" "}
                 </h3>
                 <p className="text-gray-600 font-normal dark:text-gray-300">
-                  {country.population}
+                  {humanize(country.population)}
                 </p>
               </div>
 
