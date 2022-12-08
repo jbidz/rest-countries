@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/rest-countries-api-with-color-theme-switcher-FIc-6L6uPB))
+- [Solution URL](https://www.frontendmentor.io/solutions/rest-countries-api-with-color-theme-switcher-FIc-6L6uPB)
 - [Live Site URL](https://countries-9265c.web.app/)
 
 ## My process
