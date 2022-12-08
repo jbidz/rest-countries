@@ -15,6 +15,7 @@ function Countries() {
   }, []);
 
   async function getCountryByName(name) {
+    setLoading(true);
     try {
       const res = await fetch(`https://restcountries.com/v2/name/${name}`);
       if (!res.ok) throw new Error("Could not found any country");
@@ -29,6 +30,7 @@ function Countries() {
   }
 
   async function getCountryByRegion(region) {
+    setLoading(true);
     try {
       const res = await fetch(`https://restcountries.com/v2/region/${region}`);
       if (!res.ok) throw new Error("Could not found any countries");
