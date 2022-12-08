@@ -7,12 +7,15 @@ function Card(props) {
   return (
     <div className="bg-white dark:bg-slate-800 overflow-hidden rounded-lg shadow-lg text-sm hover:scale-105 transition-all">
       <Link to={`/${name}`} className="block">
-        <img
-          className="w-full h-full object-cover block"
-          src={flag}
-          alt={`${name}'s flag`}
-          loading="lazy"
-        />
+        <div className="sm:h-52 h-64">
+          <img
+            className="w-full h-full object-cover block"
+            src={flag}
+            alt={`${name}'s flag`}
+            loading="lazy"
+          />
+        </div>
+
         <div className="p-6">
           <h2 className="text-xl font-bold mb-4 dark:text-white">{name}</h2>
           <div className="flex flex-col gap-2">
